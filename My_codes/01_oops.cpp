@@ -9,9 +9,16 @@ using namespace std;
 // 2. All the characteristics or behaviours are not for everyone to access.
 // Object should provide data security.
 
-// Dynamic polymorphism -> function overriding
+// Dynamic polymorphism -> function overriding -> run-time polymorphism
 // we can have a virtual function in our abstract class Car named accelerate
 // but their children i.e. manual car and electric car will define them differently
+// late binding (dynamic binding)
+
+// Static polymorphism -> function overloading -> compile-time polymorphism
+
+// no further inheritance -> class A final {}; 
+// no further function overloading -> virtual void show() final;
+// explicit override -> void show() override {}
 
 class Car {
 protected:
